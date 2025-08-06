@@ -1,11 +1,10 @@
 <template>
     <footer>
-    <div class="vertical-wrapper">
+    <div class="container">
       <div id="footer-wrapper">
         <div>
-          <div class="logo-wrapper" style="padding-bottom: 1.5rem;">
-            <RouterLink to="/"><span>LOGO</span></RouterLink>
-          </div>
+          <AppLogo style="padding-bottom: 1.5rem" />
+          
           <div style="padding-bottom: 1.5rem;">
             <p>Производим все аккуратно и быстро, да и вообще компания хорошая</p>
           </div>
@@ -70,7 +69,7 @@
         </div>
       </div>
       <div id="footer-bottom-wrapper">
-        <p>© 2023 LOGO. Все права защищены.</p>
+        <p>© 2025 LOGO. Все права защищены.</p>
         <div id="terms">
             <RouterLink to="/">Политика конфиденциальности</RouterLink>
             <RouterLink to="/">Условия использования</RouterLink>
