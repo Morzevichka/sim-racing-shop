@@ -54,7 +54,7 @@ header {
   top: 0;
   z-index: 10;
   background-color: var(--dark-blue);
-  opacity: 95%;
+  opacity: 96%;
   border-bottom: 1px solid var(--color-border);
 }
 
@@ -71,7 +71,7 @@ header a:hover {
 header .icon {
   color: var(--white);
   transition: color 0.3s ease-out;
-  size: 28px;
+  cursor: pointer;
 }
 
 header .icon:hover {

@@ -1,4 +1,8 @@
 <script setup>
+useSeoMeta({
+
+})
+
 </script>
 
 <template>
@@ -40,7 +44,7 @@
             <ul>
                 <li>
                     <i>
-                        <svg data-icon="check" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"></path></svg>
+                        <Icon name="mdi:check" size="20px" />
                     </i>
                     <div>
                         <strong>Живучесть</strong>
@@ -49,7 +53,7 @@
                 </li>
                 <li>
                     <i>
-                        <svg data-icon="check" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"></path></svg>
+                        <Icon name="mdi:check" size="20px" />
                     </i>
                     <div>
                         <strong>Используй везде</strong>
@@ -74,7 +78,7 @@
             <ul>
                 <li>
                     <i>
-                        <svg data-icon="check" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"></path></svg>
+                        <Icon name="mdi:check" size="20px" />
                     </i>
                     <div>
                         <strong>Живучесть</strong>
@@ -83,7 +87,7 @@
                 </li>
                 <li>
                     <i>
-                        <svg data-icon="check" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"></path></svg>
+                        <Icon name="mdi:check" size="20px" />
                     </i>
                     <div>
                         <strong>Используй везде</strong>
@@ -108,7 +112,7 @@
             <ul>
                 <li>
                     <i>
-                        <svg data-icon="check" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"></path></svg>
+                        <Icon name="mdi:check" size="20px" />
                     </i>
                     <div>
                         <strong>Живучесть</strong>
@@ -117,7 +121,7 @@
                 </li>
                 <li>
                     <i>
-                        <svg data-icon="check" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"></path></svg>
+                        <Icon name="mdi:check" size="20px" />
                     </i>
                     <div>
                         <strong>Используй везде</strong>
@@ -127,13 +131,14 @@
             </ul>
         </template>
     </IndexProduct>
+    <IndexReviewScroller />
 </template>
 
 <style scoped>
 #hero {
     position: relative;
     height: 100vh;
-    background: var(--gradient-main);
+    background: var(--gradient-hero);
 }
 
 #hero-bg {
@@ -176,7 +181,7 @@
 
 #hero-content p {
     font-size: 1.25rem;
-    color: var(--text-gray);
+    color: var(--review-text-color);
     margin-bottom: 2rem;
 }
 
@@ -216,6 +221,6 @@
 }
 
 #last {
-    background-image: linear-gradient(to top, var(--dark-blue), var(--main-bg));
+    background-image: linear-gradient(to top, var(--footer-bg), var(--main-bg));
 }
 </style>

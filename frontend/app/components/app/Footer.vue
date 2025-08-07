@@ -83,7 +83,7 @@ footer {
   color: var(--text-gray-footer);
   position: relative;
   bottom: 0;
-  background-color: var(--dark-blue);
+  background-color: var(--footer-bg);
   padding: 4rem 0 2rem 0;
   border-top: 1px solid var(--color-border);
 }

@@ -2,18 +2,22 @@
 
 :root {
     --white: #ffff;
-    --text-gray: #d1d5db;
+    --text-gray: #90a1b9;
     --text-gray-footer: #9ca3af;
     --main-bg: #0f172b;
-    --dark: #0F1419;
-    --dark-blue: #141E30;
+    --footer-bg: #141E30;
     --accent-blue: #1E90FF;
     --light-blue: #4FC3F7;
     --color-border: #1f2937;
 
-    --gradient-main: linear-gradient(to top, var(--dark-blue), #243B55);
+    --gradient-hero: linear-gradient(to top, var(--dark-blue), #243B55);
     --gradient-accent-light: linear-gradient(to right, var(--accent-blue), var(--light-blue));
     --gradient-card: linear-gradient(135deg, #1A2980, #26D0CE);
+
+    --review-bg-color: #151f33;
+    --review-text-color: #cad5e2;
+    --review-border-color: #1d293d;
+    --review-text-muted-color: var(--text-gray);
 }
 
 * {
@@ -24,7 +28,7 @@
 
 body, html {
     color: var(--white);
-    background-color: #0f172b;
+    background-color: var(--main-bg);
     min-height: 100vh;
     width: 100%;
     font-family: 'Inter', sans-serif !important;

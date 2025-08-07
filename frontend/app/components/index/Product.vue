@@ -111,11 +111,11 @@ img {
     font-size: 1.125rem;
     line-height: 1.75rem;
     margin-bottom: 1.5rem;
-    color: #90a1b9;
+    color: var(--text-gray);
 }
 
 :deep(.content-text ul) {
-    margin-bottom: 2rem;
+    margin-bottom: 2.25rem;
     list-style: none;
 }
 
@@ -129,15 +129,15 @@ img {
     margin-right: 0.75rem;
 }
 
-:deep(.content-text svg) {
-    height: 1rem;
+:deep(.content-text .icon) {
+    margin-top: 0;
     flex-shrink: 0;
     color: var(--accent-blue);
 }
 
 :deep(.content-text ul span) {
     margin-top: 0.5rem;
-    color: #90a1b9;
+    color: var(--text-gray);
 }
 
 :deep(.content-text ul div) {
@@ -152,7 +152,7 @@ img {
 
     .content {
         flex-flow: column;
-        padding: 10rem 0;
+        padding: 5rem 0;
     }
 
     .content.reverse {
@@ -171,7 +171,7 @@ img {
     }
 
     .content-image img {
-        width: 70%;
+        width: 55%;
     }
 
     .content-text {
