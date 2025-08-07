@@ -24,7 +24,7 @@ useSeoMeta({
 </script>
 
 <template>
-  <Header />
+  <AppHeader />
     <NuxtPage />
-  <Footer />
+  <AppFooter />
 </template>

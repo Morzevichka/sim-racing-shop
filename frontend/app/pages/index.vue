@@ -3,48 +3,130 @@
 
 <template>
     <section id="hero">
-        <div id="hero-bg-img">
+        <div id="hero-bg">
             <img src="/hero.png" alt="Hero img" loading="lazy">
         </div>
         <div class="container">
             <div id="hero-content">
-                <h1>
-                    Крутой товар вообще
-                    <br/>
-                    <span>а это еще круче</span>
-                    ну короче
+                <h1>Крутой товар вообще<br/>
+                    <span>а это еще круче</span> ну короче
                 </h1>
-                <p>А тут еще много текста который круто подходит под все это описание придумаю потом с GPT как всегда</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar</p>
                 <div id="hero-content-button">
-                    <span id="hero-content-button-catalog">
-                        <RouterLink to="/catalog">Каталог продукции</RouterLink>
-                    </span>
-                    <span id="hero-content-button-about">
-                        <RouterLink to="/about">Узнать больше</RouterLink>
-                    </span>
+                    <ButtonAccentLight text="Каталог продукции" route="/catalog" />
+                    <ButtonTransparent text="Узнать больше" route="/about" />
                 </div>
             </div>
         </div>
         <div id="curve">
-            <svg viewBox="0 0 1440 150" preserveAspectRatio="none">
-                <path d="M0,0 C360,200 1080,-100 1440,100 L1440,150 L0,150 Z" fill="#0F1419"/>
+            <svg viewBox="0 0 1440 150" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,0 C360,200 1080,-100 1440,100 L1440,150 L0,150 Z" fill="var(--main-bg)" />
             </svg>
         </div>
     </section>
-    <section class="video-section">
-        <div class="container">
-            <div class="container-wrappwer">
-                 <div class="video-container">
-                    <img src="/first-video.png"/>
-                </div>
-                <div class="text-container">
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="product-section">
-
-    </section>
+    
+    <IndexProduct image_src="/first-video.png" image_alt="hand-brake" button_text="Подробнее" button_route="/">
+        <template #header>
+            <h2>Бэбэбэ
+                <span>ручник</span>
+            </h2>
+        </template>
+        <template #paragraph>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar.
+            </p>
+        </template>
+        <template #list>
+            <ul>
+                <li>
+                    <i>
+                        <svg data-icon="check" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"></path></svg>
+                    </i>
+                    <div>
+                        <strong>Живучесть</strong>
+                        <span>Изготовлены из материала</span>
+                    </div>
+                </li>
+                <li>
+                    <i>
+                        <svg data-icon="check" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"></path></svg>
+                    </i>
+                    <div>
+                        <strong>Используй везде</strong>
+                        <span>Совместимость со всеми популярными симуляторами</span>
+                    </div>
+                </li>
+            </ul>
+        </template>
+    </IndexProduct>
+    <IndexProduct image_src="/first-video.png" image_alt="shifter" button_text="Подробнее" button_route="/" :reverse="true">
+        <template #header>
+            <h2>Бэбэбэ 
+                <span>шифтер</span>
+            </h2>
+        </template>
+        <template #paragraph>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar.
+            </p>
+        </template>
+        <template #list>
+            <ul>
+                <li>
+                    <i>
+                        <svg data-icon="check" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"></path></svg>
+                    </i>
+                    <div>
+                        <strong>Живучесть</strong>
+                        <span>Изготовлены из материала</span>
+                    </div>
+                </li>
+                <li>
+                    <i>
+                        <svg data-icon="check" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"></path></svg>
+                    </i>
+                    <div>
+                        <strong>Используй везде</strong>
+                        <span>Совместимость со всеми популярными симуляторами</span>
+                    </div>
+                </li>
+            </ul>
+        </template>
+    </IndexProduct>
+    <IndexProduct image_src="/first-video.png" image_alt="button-box" button_text="Подробнее" button_route="/">
+        <template #header>
+            <h2>Бэбэбэ 
+                <span>button box</span>
+            </h2>
+        </template>
+        <template #paragraph>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar.
+            </p>
+        </template>
+        <template #list>
+            <ul>
+                <li>
+                    <i>
+                        <svg data-icon="check" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"></path></svg>
+                    </i>
+                    <div>
+                        <strong>Живучесть</strong>
+                        <span>Изготовлены из материала</span>
+                    </div>
+                </li>
+                <li>
+                    <i>
+                        <svg data-icon="check" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"></path></svg>
+                    </i>
+                    <div>
+                        <strong>Используй везде</strong>
+                        <span>Совместимость со всеми популярными симуляторами</span>
+                    </div>
+                </li>
+            </ul>
+        </template>
+    </IndexProduct>
 </template>
 
 <style scoped>
@@ -54,13 +136,13 @@
     background: var(--gradient-main);
 }
 
-#hero-bg-img {
+#hero-bg {
     position: absolute;
     inset: 0;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-#hero-bg-img img {
+#hero-bg img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -75,7 +157,7 @@
 }
 
 #hero-content {
-    max-width: 52rem;
+    max-width: 58rem;
     padding-bottom: 3rem;
 }
 
@@ -104,66 +186,20 @@
     gap: 1rem;
 }
 
-#hero-content-button span {
-    text-align: center;
-    transition: 300ms;
-    border-radius: 0.375rem;
-    padding: 0.75rem 2rem;
-}
-
-#hero-content-button a {
-    font-weight: 700;
-    color: white;
-    text-decoration: none;
-}
-
-#hero-content-button-catalog {
-    background-image: var(--gradient-accent-light);
-}
-
-#hero-content-button-catalog:hover {
-    opacity: 0.85;
-}
-
-#hero-content-button-about {
-    background-color: transparent;
-    border: 2px solid white;
-    color: white;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-}
-
-#hero-content-button-about::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.15);
-    transition: left 0.3s ease;
-    z-index: 0;
-}
-
-#hero-content-button-about:hover::before {
-    left: 0;
-}
-
 #hero #curve {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  z-index: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 0;
 }
 
 #hero #curve svg {
   display: block;
   width: 100%;
-  height: 50px;
+  height: 30px;
 }
 
 @media screen and (max-width: 768px) {
@@ -179,42 +215,7 @@
     }
 }
 
-.video-section {
-    padding: 5rem 0;
-    background-color: var(--dark);
-    height: 700px;
-}
-
-.container-wrapper {
-    display: flex;
-    flex-flow: row;
-    gap: 3rem;
-    align-items: center;
-}
-
-.video-container {
-    width: 50%;
-    position: relative;
-}
-
-.video-container img {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-}
-
-@media screen and (max-width: 1024px) {
-    .container-wrapper {
-        flex-flow: column;
-    }
-
-    .video-container {
-        width: 100%;
-    }
-
-    .card-content {
-        width: 100%;
-    }
+#last {
+    background-image: linear-gradient(to top, var(--dark-blue), var(--main-bg));
 }
 </style>
