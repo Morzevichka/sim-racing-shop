@@ -84,7 +84,7 @@ footer {
   position: relative;
   bottom: 0;
   background-color: var(--footer-bg);
-  padding: 4rem 0 2rem 0;
+  padding-block: 4rem 2rem;
   border-top: 1px solid var(--color-border);
 }
 

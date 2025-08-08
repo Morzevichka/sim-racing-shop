@@ -1,9 +1,5 @@
 <script setup>
 defineProps({
-    text: {
-        type: String,
-        required: true
-    },
     route: {
         type: String,
         required: true
@@ -12,10 +8,25 @@ defineProps({
 </script>
 
 <template>
-    <NuxtLink :to="route">{{ text }}</NuxtLink>
+    <NuxtLink :to="route">
+        <div>
+            <slot />
+            <slot name="icon" />
+        </div>
+    </NuxtLink>
 </template>
 
 <style scoped>
+div {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+:deep(.icon) {
+    flex-shrink: 0;
+}
+
 a {
     display: inline-block;
     text-align: center;
@@ -26,6 +37,7 @@ a {
     text-decoration: none;
     color: var(--white);
     font-weight: 700;
+    cursor: pointer;
 }
 
 a:hover {

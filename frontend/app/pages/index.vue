@@ -17,8 +17,8 @@ useSeoMeta({
                 </h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar</p>
                 <div id="hero-content-button">
-                    <ButtonAccentLight text="Каталог продукции" route="/catalog" />
-                    <ButtonTransparent text="Узнать больше" route="/about" />
+                    <ButtonAccentLight route="/catalog">Каталог продукции</ButtonAccentLight>
+                    <ButtonTransparent route="/about">Узнать больше</ButtonTransparent>
                 </div>
             </div>
         </div>
@@ -131,7 +131,10 @@ useSeoMeta({
             </ul>
         </template>
     </IndexProduct>
+
     <IndexReviewScroller />
+    
+    <IndexContact />
 </template>
 
 <style scoped>
@@ -218,9 +221,5 @@ useSeoMeta({
     #hero-content-button {
         flex-direction: column;
     }
-}
-
-#last {
-    background-image: linear-gradient(to top, var(--footer-bg), var(--main-bg));
 }
 </style>

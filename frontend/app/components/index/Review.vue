@@ -50,7 +50,7 @@ defineProps({
     background-color: var(--review-bg-color);
     border: 1px solid var(--review-border-color);
     border-radius: 8px;
-    width: 450px;
+    width: 400px;
 }
 
 .content {
@@ -92,7 +92,7 @@ defineProps({
 
 .reviewer-icon span {
     color: var(--review-text-muted-color);
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     font-weight: 500;
 }
 
@@ -109,9 +109,9 @@ defineProps({
     margin: 0;
 }
 
-@media screen and (max-width: 1024px) {
+/* @media screen and (max-width: 1024px) {
     .card {
         width: 350px;
     }
-}
+} */
 </style>

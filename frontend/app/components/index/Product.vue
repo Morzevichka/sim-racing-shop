@@ -37,7 +37,7 @@ defineProps({
                     <slot name="header" />
                     <slot name="paragraph" />
                     <slot name="list"/>
-                    <ButtonAccentLight :text="button_text" :route="button_route" />
+                    <ButtonAccentLight :route="button_route">{{ button_text }}</ButtonAccentLight>
                 </div>
             </div>
         </div>
@@ -45,10 +45,6 @@ defineProps({
 </template>
 
 <style scoped>
-.product {
-    position: relative;
-}
-
 .content {
     position: relative;
     padding: 10rem 0;
@@ -65,6 +61,7 @@ defineProps({
     width: 100%;
     height: 1px;
     background-image: var(--gradient-card);
+    border-radius: 8px;
 }
 
 .content.reverse {
@@ -86,6 +83,7 @@ img {
     width: 70%;
     object-fit: cover;
     border-radius: 2%;
+    opacity: 100%;
     border: 1px solid var(--color-border);
 }
 
@@ -146,10 +144,6 @@ img {
 }
 
 @media screen and (max-width: 1024px) {
-    .product {
-        height: auto;
-    }
-
     .content {
         flex-flow: column;
         padding: 5rem 0;

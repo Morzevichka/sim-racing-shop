@@ -22,12 +22,12 @@ onMounted(() => {
             });
         });
     }
-})
+});
 </script>
 
 <template>
     <section class="reviews">
-        <div class="scroller-head">
+        <div class="reviews-head">
             <h1>Отзывы от наших <span>покупателей</span></h1>
         </div>
         <div class="scroller">
@@ -72,32 +72,23 @@ onMounted(() => {
 <style scoped>
 .reviews {
     position: relative;
-    padding: 5rem 0;
+    padding-block: 5rem 10rem;
 }
 
-.scroller-head {
+.reviews-head {
     position: relative;
-    margin-bottom: 2.5rem;
+    margin-bottom: 3rem;
 }
 
-.scroller-head h1 {
+.reviews-head h1 {
     text-align: center;
     font-size: 2rem;
 }
 
-.scroller-head span {
+.reviews-head span {
     background-image: var(--gradient-accent-light);
     color: transparent;
     background-clip: text;
-}
-
-.reviews::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 1px;
-    background-image: var(--gradient-card);
 }
 
 .scroller {
@@ -108,6 +99,7 @@ onMounted(() => {
 .scroller__inner {
     padding-block: 1rem;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 1rem;
 }
@@ -121,8 +113,7 @@ onMounted(() => {
 .scroller[data-animated=true] .scroller__inner {
     width: max-content;
     flex-wrap: nowrap;
-    animation: scroll var(--_animation-duration, 40s)
-    var(--_animation-direction, forwards) linear infinite;
+    animation: scroll var(--_animation-duration, 40s) var(--_animation-direction, forwards) linear infinite;
 }
 
 .scroller[data-direction="right"] {
@@ -148,8 +139,9 @@ onMounted(() => {
 }
 
 @media screen and (max-width: 1024px) {
+
     .reviews {
-        padding: 3.5rem 0;
+        padding: 3.25rem 0;
     }
 
     .scroller-head h1 {

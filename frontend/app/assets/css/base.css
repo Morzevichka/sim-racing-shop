@@ -10,7 +10,7 @@
     --light-blue: #4FC3F7;
     --color-border: #1f2937;
 
-    --gradient-hero: linear-gradient(to top, var(--dark-blue), #243B55);
+    --gradient-hero: linear-gradient(to top, var(--footer-bg), #243B55);
     --gradient-accent-light: linear-gradient(to right, var(--accent-blue), var(--light-blue));
     --gradient-card: linear-gradient(135deg, #1A2980, #26D0CE);
 

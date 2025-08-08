@@ -1,5 +1,7 @@
 <script setup>
 
+import { onMounted } from 'vue'
+
 const sidebarVisiable = useState('sidebar-visiable', () => false)
 
 function openSidebar() {
@@ -53,7 +55,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 10;
-  background-color: var(--dark-blue);
+  background-color: var(--footer-bg);
   opacity: 96%;
   border-bottom: 1px solid var(--color-border);
 }
