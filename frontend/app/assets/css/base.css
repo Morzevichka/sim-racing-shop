@@ -14,10 +14,10 @@
     --gradient-accent-light: linear-gradient(to right, var(--accent-blue), var(--light-blue));
     --gradient-card: linear-gradient(135deg, #1A2980, #26D0CE);
 
-    --review-bg-color: #151f33;
-    --review-text-color: #cad5e2;
-    --review-border-color: #1d293d;
-    --review-text-muted-color: var(--text-gray);
+    --card-bg-color: #151f33;
+    --card-text-color: #cad5e2;
+    --card-border-color: #1d293d;
+    --card-text-muted-color: var(--text-gray);
 }
 
 * {

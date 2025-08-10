@@ -29,16 +29,8 @@ defineProps({
                     </div>
                 </div>
                 <div>
-                    <Icon
-                        v-for="n in rating"
-                        :key="'filled-' + n"
-                        name="mdi:star"
-                    />
-                    <Icon
-                        v-for="n in (5 - rating)"
-                        :key="'empty-' + n"
-                        name="mdi:star-outline"
-                    />
+                    <Icon v-for="n in rating" :key="'filled-' + n" name="mdi:star" />
+                    <Icon v-for="n in (5 - rating)" :key="'empty-' + n" name="mdi:star-outline" />
                 </div>
             </div>
         </div>
@@ -47,8 +39,8 @@ defineProps({
 
 <style scoped> 
 .card {
-    background-color: var(--review-bg-color);
-    border: 1px solid var(--review-border-color);
+    background-color: var(--card-bg-color);
+    border: 1px solid var(--card-border-color);
     border-radius: 8px;
     width: 400px;
 }
@@ -60,7 +52,7 @@ defineProps({
 }
 
 :deep(.content p) {
-    color: var(--review-text-color);
+    color: var(--card-text-color);
     line-height: 1.5rem;
     margin-bottom: 1rem;
 }
@@ -84,14 +76,14 @@ defineProps({
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--review-border-color);
+    background-color: var(--card-border-color);
     border-radius: 50%;
     width: 40px;
     height: 40px;
 }
 
 .reviewer-icon span {
-    color: var(--review-text-muted-color);
+    color: var(--card-text-muted-color);
     font-size: 1.125rem;
     font-weight: 500;
 }
@@ -105,13 +97,7 @@ defineProps({
 .reviewer .from {
     font-size: 0.875rem;
     line-height: 1.5;
-    color: var(--review-text-muted-color);
+    color: var(--card-text-muted-color);
     margin: 0;
 }
-
-/* @media screen and (max-width: 1024px) {
-    .card {
-        width: 350px;
-    }
-} */
 </style>

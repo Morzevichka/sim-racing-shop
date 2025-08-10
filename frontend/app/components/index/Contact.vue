@@ -13,7 +13,7 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar.</p>
                         <ButtonAccentLight route="/">
                             Перейти в каталог
-                            <template #icon><Icon name="si:arrow-right-line" size="29px"/></template>
+                            <Icon name="si:arrow-right-line" size="29px"/>
                         </ButtonAccentLight>
                     </div>
                 </div>
@@ -28,7 +28,7 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar.</p>
                         <ButtonTransparent route="/">
                             Написать нам
-                            <template #icon><Icon name="mdi:telegram" size="25px"/></template>
+                            <Icon name="mdi:telegram" size="25px"/>
                         </ButtonTransparent>
                     </div>
                 </div>
@@ -64,8 +64,8 @@
 
 .card {
     width: 50%;
-    background-color: var(--review-bg-color);
-    border: 1px solid var(--review-border-color);
+    background-color: var(--card-bg-color);
+    border: 1px solid var(--card-border-color);
     border-radius: 0.75rem;
     overflow: hidden;
     transition: color 0.3s ease-out;

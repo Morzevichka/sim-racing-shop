@@ -1,15 +1,13 @@
 <script setup>
 
-import { onMounted } from 'vue'
-
-const sidebarVisiable = useState('sidebar-visiable', () => false)
+const sidebarVisiable = useState('sidebar-visiable', () => false);
 
 function openSidebar() {
-    sidebarVisiable.value = true
+    sidebarVisiable.value = true;
 }
 
 function closeSidebar() {
-    sidebarVisiable.value = false
+    sidebarVisiable.value = false;
 }
 </script>
 

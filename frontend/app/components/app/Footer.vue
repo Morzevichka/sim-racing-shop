@@ -1,5 +1,5 @@
 <template>
-    <footer>
+  <footer>
     <div class="container">
       <div id="footer-wrapper">
         <div>
@@ -22,29 +22,24 @@
             </a>
           </div>
         </div>
-
-        <!-- Nav -->
         <div class="footer-container">
           <h4>Навигация</h4>
           <div class="nav-footer">
-            <RouterLink to="/">Главная</RouterLink>
-            <RouterLink to="/catalog">Каталог</RouterLink>
-            <RouterLink to="/about">О нас</RouterLink>
-            <RouterLink to="/why-us">Почему мы</RouterLink>
-            <RouterLink to="/">Доставка и оплата</RouterLink>
-            <RouterLink to="/">Контакты</RouterLink>
+            <NuxtLink to="/">Главная</NuxtLink>
+            <NuxtLink to="/catalog">Каталог</NuxtLink>
+            <NuxtLink to="/about">О нас</NuxtLink>
+            <NuxtLink to="/">Доставка и оплата</NuxtLink>
+            <NuxtLink to="/">Контакты</NuxtLink>
           </div>
         </div>
-        <!-- Products -->
         <div class="footer-container">
           <h4>Продукция</h4>
           <div class="nav-footer">
-            <RouterLink to="/">Ручники</RouterLink>
-            <RouterLink to="/">Шифтеры</RouterLink>
-            <RouterLink to="/">Button Box</RouterLink>
+            <NuxtLink to="/">Ручники</NuxtLink>
+            <NuxtLink to="/">Шифтеры</NuxtLink>
+            <NuxtLink to="/">Button Box</NuxtLink>
           </div>
         </div>
-        <!-- Contacts -->
         <div class="footer-container">
           <h4>Контакты</h4>
           <div class="nav-footer">
@@ -70,8 +65,8 @@
       <div id="footer-bottom-wrapper">
         <p>© 2025 LOGO. Все права защищены.</p>
         <div id="terms">
-            <RouterLink to="/">Политика конфиденциальности</RouterLink>
-            <RouterLink to="/">Условия использования</RouterLink>
+            <NuxtLink to="/">Политика конфиденциальности</NuxtLink>
+            <NuxtLink to="/">Условия использования</NuxtLink>
         </div>
       </div>
     </div>

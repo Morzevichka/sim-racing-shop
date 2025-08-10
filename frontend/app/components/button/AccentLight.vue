@@ -11,7 +11,6 @@ defineProps({
     <NuxtLink :to="route">
         <div>
             <slot />
-            <slot name="icon" />
         </div>
     </NuxtLink>
 </template>
