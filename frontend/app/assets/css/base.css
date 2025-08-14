@@ -1,14 +1,16 @@
 @import '@fontsource/inter';
 
 :root {
-    --white: #ffff;
-    --text-gray: #90a1b9;
-    --text-gray-footer: #9ca3af;
+    --text-primary: #ffff;
+    --text-paragraph: #90a1b9;
+
     --main-bg: #0f172b;
     --footer-bg: #141E30;
+    
+    --color-border: #1f2937;
+
     --accent-blue: #1E90FF;
     --light-blue: #4FC3F7;
-    --color-border: #1f2937;
 
     --gradient-hero: linear-gradient(to top, var(--footer-bg), #243B55);
     --gradient-accent-light: linear-gradient(to right, var(--accent-blue), var(--light-blue));
@@ -16,8 +18,8 @@
 
     --card-bg-color: #151f33;
     --card-text-color: #cad5e2;
-    --card-border-color: #1d293d;
-    --card-text-muted-color: var(--text-gray);
+    --card-border-color: var(--color-border);
+    --card-text-muted-color: var(--text-paragraph);
 }
 
 * {
@@ -27,7 +29,7 @@
 }
 
 body, html {
-    color: var(--white);
+    color: var(--text-primary);
     background-color: var(--main-bg);
     min-height: 100vh;
     width: 100%;

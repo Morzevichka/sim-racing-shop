@@ -28,6 +28,7 @@
             <NuxtLink to="/">Главная</NuxtLink>
             <NuxtLink to="/catalog">Каталог</NuxtLink>
             <NuxtLink to="/about">О нас</NuxtLink>
+            <NuxtLink to="/qa">QA</NuxtLink>
             <NuxtLink to="/">Доставка и оплата</NuxtLink>
             <NuxtLink to="/">Контакты</NuxtLink>
           </div>
@@ -75,7 +76,7 @@
 
 <style scoped>
 footer {
-  color: var(--text-gray-footer);
+  color: var(--text-paragraph);
   position: relative;
   bottom: 0;
   background-color: var(--footer-bg);
@@ -86,7 +87,7 @@ footer {
 footer a {
   text-decoration: none;
   transition: color 0.3s ease-out;
-  color: var(--text-gray-footer);
+  color: var(--text-paragraph);
 }
 
 footer a:hover {
@@ -128,7 +129,7 @@ footer a:hover {
 }
 
 .footer-container h4 {
-  color: var(--white);
+  color: var(--text-primary);
   margin-bottom: 1.5rem;
   font-size: 1.125rem;
   line-height: 1.75rem;

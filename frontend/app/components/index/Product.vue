@@ -109,7 +109,7 @@ img {
     font-size: 1.125rem;
     line-height: 1.75rem;
     margin-bottom: 1.5rem;
-    color: var(--text-gray);
+    color: var(--text-paragraph);
 }
 
 :deep(.content-text ul) {
@@ -135,7 +135,7 @@ img {
 
 :deep(.content-text ul span) {
     margin-top: 0.5rem;
-    color: var(--text-gray);
+    color: var(--text-paragraph);
 }
 
 :deep(.content-text ul div) {

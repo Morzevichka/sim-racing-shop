@@ -90,7 +90,7 @@ defineProps({
 
 .reviewer .name {
     font-weight: 500;
-    color: var(--white);
+    color: var(--text-primary);
     margin: 0;
 }
 

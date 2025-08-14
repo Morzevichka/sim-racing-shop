@@ -70,7 +70,7 @@
 
 #hero-content p {
     font-size: 1.25rem;
-    color: var(--review-text-color);
+    color: var(--text-paragraph);
     margin-bottom: 2rem;
 }
 

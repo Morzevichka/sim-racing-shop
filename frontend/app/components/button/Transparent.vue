@@ -23,16 +23,14 @@ div {
 }
 
 a {
-    display: inline-block;
-    text-align: center;
-    text-align: center;
+    display: inline-flex;
     border-radius: 0.375rem;
     padding: 0.75rem 2rem;
     border: 2px solid white;
     position: relative;
     overflow: hidden;
     text-decoration: none;
-    color: var(--white);
+    color: var(--text-primary);
     font-weight: 700;
     cursor: pointer;
 }
@@ -51,5 +49,12 @@ a::before {
 
 a:hover::before {
     left: 0;
+}
+
+@media screen and (max-width: 640px) {
+    a {
+        display: flex;
+        justify-content: center;
+    }
 }
 </style>

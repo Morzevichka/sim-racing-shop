@@ -106,8 +106,8 @@ onMounted(() => {
 
 .scroller[data-animated=true] {
     overflow: hidden;
-    -webkit-mask: linear-gradient(90deg, transparent, var(--white) 20%, var(--white) 80%, transparent);
-    mask: linear-gradient(90deg, transparent, var(--white) 20%, var(--white) 80%, transparent);
+    -webkit-mask: linear-gradient(90deg, transparent, var(--text-primary) 20%, var(--text-primary) 80%, transparent);
+    mask: linear-gradient(90deg, transparent, var(--text-primary) 20%, var(--text-primary) 80%, transparent);
 }
 
 .scroller[data-animated=true] .scroller__inner {

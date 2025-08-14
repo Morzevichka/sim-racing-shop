@@ -19,7 +19,6 @@ function closeSidebar() {
         
         <div id="close-sidebar-button" @click="closeSidebar" :class="{ show: sidebarVisiable }">
         <Icon name="icon-park-outline:close" size="28px"/>
-          <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="m480-444.62-209.69 209.7q-7.23 7.23-17.5 7.42-10.27.19-17.89-7.42-7.61-7.62-7.61-17.7 0-10.07 7.61-17.69L444.62-480l-209.7-209.69q-7.23-7.23-7.42-17.5-.19-10.27 7.42-17.89 7.62-7.61 17.7-7.61 10.07 0 17.69 7.61L480-515.38l209.69-209.7q7.23-7.23 17.5-7.42 10.27-.19 17.89 7.42 7.61 7.62 7.61 17.7 0 10.07-7.61 17.69L515.38-480l209.7 209.69q7.23 7.23 7.42 17.5.19 10.27-7.42 17.89-7.62 7.61-17.7 7.61-10.07 0-17.69-7.61L480-444.62Z"/></svg> -->
         </div>
         <nav id="menu" :class="{ show : sidebarVisiable }">
           <div class="container">
@@ -33,10 +32,10 @@ function closeSidebar() {
         </nav>
         <div id="cart-profile" :class="{ show: sidebarVisiable }">
           <NuxtLink to="/cart">
-            <Icon name="mdi:cart" size="28px"/>
+            <Icon name="mdi:cart" size="24px"/>
           </NuxtLink>
-          <NuxtLink to="/"> <!-- !!!!!!!!!!!!!!!! -->
-            <Icon name="famicons:person-sharp" size="28px"/>
+          <NuxtLink to="/">
+            <Icon name="famicons:person-sharp" size="24px"/>
           </NuxtLink>
         
           <div id="open-side-bar" @click="openSidebar" :class="{ show: !sidebarVisiable}">
@@ -61,7 +60,7 @@ header {
 header a {
   text-decoration: none;
   transition: color 250ms ease;
-  color: var(--white);
+  color: var(--text-primary);
 }
 
 header a:hover {
@@ -69,7 +68,7 @@ header a:hover {
 }
 
 header .icon {
-  color: var(--white);
+  color: var(--text-primary);
   transition: color 0.3s ease-out;
   cursor: pointer;
 }
@@ -136,7 +135,7 @@ header .icon:hover {
     display: flex;
     flex-flow: column;
     align-items: center;
-    background-color: var(--dark-blue);
+    background-color: var(--main-bg);
     transition: right 300ms ease-in-out;
     z-index: 11;
     border-left: 1px solid #1f2937;

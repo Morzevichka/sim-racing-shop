@@ -30,7 +30,7 @@ const breadcrumbs = computed(() => {
 <style scoped>
 nav {
     padding: 2rem 0;
-    color: var(--text-gray);
+    color: var(--text-paragraph);
 }
 
 ul {
@@ -49,7 +49,7 @@ li {
 }
 
 a {
-    color: var(--text-gray);
+    color: var(--text-paragraph);
     text-decoration: none;
     transition: color 0.3s ease-out;
 }

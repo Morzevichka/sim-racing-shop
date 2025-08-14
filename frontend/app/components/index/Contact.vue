@@ -82,7 +82,7 @@
 .card p {
     font-weight: 300;
     margin-bottom: 1.5rem;
-    color: var(--text-gray);
+    color: var(--text-paragraph);
 }
 
 .card-content {
