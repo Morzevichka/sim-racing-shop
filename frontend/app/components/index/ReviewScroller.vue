@@ -138,7 +138,7 @@ onMounted(() => {
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 990px) {
 
     .reviews {
         padding: 3.25rem 0;

@@ -143,7 +143,7 @@ img {
     flex-flow: column;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 990px) {
     .content {
         flex-flow: column;
         padding: 5rem 0;
@@ -173,7 +173,7 @@ img {
     }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 750px) {
     .content-text a {
         width: 100%;
     }

@@ -119,13 +119,13 @@ header .icon:hover {
   display: none;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 990px) {
   #open-side-bar, #close-sidebar-button {
     display: none;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 990px) {
   #menu {
     position: fixed;
     top: 0;

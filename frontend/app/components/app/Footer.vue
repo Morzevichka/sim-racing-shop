@@ -154,19 +154,17 @@ footer a:hover {
     color: #6b7280;
 }
 
-@media screen and (max-width: 1024px)  and (min-width: 768px) {
+@media screen and (max-width: 990px)  and (min-width: 750px) {
     #footer-wrapper {
         grid-template-columns:  repeat(2, 1fr);
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 750px) {
     #footer-wrapper {
         grid-template-columns: repeat(1, 1fr);
     }
-}
 
-@media screen and (max-width: 768px) {
     #footer-bottom-wrapper {
         flex-flow: column;
     }

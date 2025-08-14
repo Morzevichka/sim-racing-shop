@@ -44,7 +44,7 @@ a:hover {
 }
 
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 750px) {
     a {
         display: flex;
         justify-content: center;

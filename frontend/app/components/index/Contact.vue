@@ -117,7 +117,7 @@
     line-height: 2rem;
     transition: color 0.15s ease-out;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 990px) {
     .content {
         padding: 5rem 0;
         flex-direction: column;

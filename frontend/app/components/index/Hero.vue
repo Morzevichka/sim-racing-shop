@@ -96,14 +96,12 @@
   height: 30px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 750px) {
     #hero-content h1 {
         font-size: 2.5rem;
         line-height: 1.25;
     }
-}
 
-@media screen and (max-width: 640px) {
     #hero-content-button {
         flex-direction: column;
     }

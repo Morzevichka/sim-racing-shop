@@ -51,7 +51,7 @@ a:hover::before {
     left: 0;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 750px) {
     a {
         display: flex;
         justify-content: center;
