@@ -1,0 +1,35 @@
+@import '@fontsource/inter';
+
+:root {
+    --primary: #ffff;
+    --paragraph: #90a1b9;
+    --dark: #0f172b;
+    --dark-blue: #141E30;
+    --gray: #1e2939;
+    --accent-blue: #1E90FF;
+    --light-blue: #4FC3F7;
+
+    --gradient-hero: linear-gradient(to top, var(--dark-blue), #243B55);
+    --gradient-accent-light: linear-gradient(to right, var(--accent-blue), var(--light-blue));
+    --gradient-card: linear-gradient(135deg, #1A2980, #26D0CE);
+
+    --card-bg-color: #151f33;
+    --card-text-color: #cad5e2;
+    --card-border-color: var(--gray);
+    --card-text-muted-color: var(--paragraph);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    color: var(--primary);
+    background-color: var(--dark);
+    min-height: 100vh;
+    width: 100%;
+    font-family: 'Inter', sans-serif !important;
+    scroll-behavior: smooth;
+}
