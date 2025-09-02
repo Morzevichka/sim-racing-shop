@@ -4,20 +4,21 @@
       <div id="footer-wrapper">
         <div>
           <AppLogo style="padding-bottom: 1.5rem" />
+
           <div style="padding-bottom: 1.5rem;">
             <p style="line-height: 1.75rem;">Производим все аккуратно и быстро, да и вообще компания хорошая</p>
           </div>
           <div id="footer-socials">
-            <a href="https://google.com" target="_blank">
+            <a href="https://vk.com" target="_blank">
               <Icon name="mdi:vk" size="28px" />
             </a>
-            <a href="https://google.com" target="_blank">
+            <a href="https://instagram.com" target="_blank">
               <Icon name="mdi:instagram" size="28px" />
             </a>
-            <a href="https://google.com" target="_blank">
+            <a href="https://youtube.com" target="_blank">
               <Icon name="mdi:youtube" size="28px" />
             </a>
-            <a href="https://google.com" target="_blank">
+            <a href="https://telegram.com" target="_blank">
               <Icon name="mdi:telegram" size="28px" />
             </a>
           </div>

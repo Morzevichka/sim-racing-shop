@@ -1,13 +1,13 @@
 <script setup>
 
-const sidebarVisiable = useState('sidebar-visiable', () => false);
+const sidebarVisible = useState('sidebar-visible', () => false);
 
 function openSidebar() {
-    sidebarVisiable.value = true;
+    sidebarVisible.value = true;
 }
 
 function closeSidebar() {
-    sidebarVisiable.value = false;
+    sidebarVisible.value = false;
 }
 </script>
 
@@ -17,11 +17,11 @@ function closeSidebar() {
             <div id="header-wrapper">
                 <AppLogo />
 
-                <div id="close-sidebar-button" @click="closeSidebar" :class="{ show: sidebarVisiable }">
+                <div id="close-sidebar-button" @click="closeSidebar" :class="{ show: sidebarVisible }">
                     <Icon name="icon-park-outline:close" size="28px"/>
                 </div>
 
-                <nav id="menu" :class="{ show : sidebarVisiable }">
+                <nav id="menu" :class="{ show : sidebarVisible }">
                     <div class="container">
                     <ul>
                         <li><NuxtLink to="/">Главная</NuxtLink></li>
@@ -32,7 +32,7 @@ function closeSidebar() {
                     </div>
                 </nav>
 
-                <div id="cart-profile" :class="{ show: sidebarVisiable }">
+                <div id="cart-profile" :class="{ show: sidebarVisible }">
                     <NuxtLink to="/cart">
                         <Icon name="mdi:cart" size="24px"/>
                     </NuxtLink>
@@ -40,7 +40,7 @@ function closeSidebar() {
                         <Icon name="famicons:person-sharp" size="24px"/>
                     </NuxtLink>
                     
-                    <div id="open-side-bar" @click="openSidebar" :class="{ show: !sidebarVisiable }">
+                    <div id="open-sidebar-button" @click="openSidebar" :class="{ show: !sidebarVisible }">
                         <Icon name="charm:menu-hamburger" size="28px"/>
                     </div>
                 </div>
@@ -104,18 +104,18 @@ header a:hover, header .icon:hover {
     color: var(--accent-blue);
 }
 
-#close-sidebar-button, #open-side-bar {
+#close-sidebar-button, #open-sidebar-button {
     cursor: pointer;
     height: 28px;
     width: 28px;
     display: none;
 }
 
-#open-side-bar {
+#open-sidebar-button {
     scale: 115%;
 }
 
-#close-side-bar {
+#close-sidebar-button {
     position: absolute;
     right: 0;
 }
@@ -159,7 +159,7 @@ header a:hover, header .icon:hover {
         justify-content: end;
     }
 
-    #close-sidebar-button.show, #open-side-bar.show {
+    #close-sidebar-button.show, #open-sidebar-button.show {
         display: block;
         z-index: 12;
     }
