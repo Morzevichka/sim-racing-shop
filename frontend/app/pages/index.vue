@@ -5,5 +5,8 @@ useSeoMeta({
 </script>
 
 <template>
-    <h1 class="text-2xl font-bold">hello</h1>
+    <IndexHero />
+    <IndexProducts />
+    <IndexReviewScroller />
+    <IndexContact />
 </template>
