@@ -11,9 +11,9 @@ describe('Footer.vue (unit)', () => {
 
     it('can mount the component', async () => {
         expect(component.find('#footer-socials').exists()).toBe(true)
-        expect(component.findAll('.footer-container').length).toBe(3)
+        expect(component.findAll('.footer-container')).toHaveLength(3)
         expect(component.find('#footer-bottom-wrapper').exists()).toBe(true)
-        expect(component.findAll('a').length).toBe(16)
+        expect(component.findAll('a')).toHaveLength(16)
     })
 
     it('contains right links to socials', async () => {
