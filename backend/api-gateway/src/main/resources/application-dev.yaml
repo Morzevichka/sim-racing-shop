@@ -1,0 +1,17 @@
+internal: http://host.docker.internal
+
+spring:
+  cloud:
+    gateway:
+      server:
+        webmvc:
+          routes:
+            - id: catalog-service
+              uri: ${internal}:8081
+              predicates:
+                - Path=/api/catalog/**
+              filters:
+                - StripPrefix=1
+
+server:
+  port: 8080

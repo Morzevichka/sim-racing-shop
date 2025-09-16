@@ -1,0 +1,16 @@
+catalogService: http://catalog-service:8081
+
+spring:
+  cloud:
+    gateway:
+      server:
+        webmvc:
+          routes:
+            - id: catalog-service
+              uri: ${catalogService}
+              predicates:
+                - Path=/api/catalog/**
+              filters:
+                - StripPrefix=1
+server:
+  port: 8081
